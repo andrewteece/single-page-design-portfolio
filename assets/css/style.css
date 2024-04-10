@@ -1,0 +1,17 @@
+/* FONTS */
+
+@font-face {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  src: url('../fonts/PlusJakartaSans-Medium.woff2') format('woff2');
+  src: url('../fonts/PlusJakartaSans-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  src: url('../fonts/PlusJakartaSans-Bold.woff2') format('woff2');
+  src: url('../fonts/PlusJakartaSans-Bold.woff') format('woff');
+}
+
+/* CSS CUSTOM PROPERTIES */
