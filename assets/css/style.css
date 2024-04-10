@@ -22,6 +22,7 @@
   --fw-regular: 500;
   --fw-bold: 700;
 
+  --fs-sm: 0.875rem;
   --fs-1: 1rem;
   --fs-2: 1.125rem;
   --fs-3: 1.5rem;
@@ -30,7 +31,8 @@
   --fs-6: 2.5rem;
   --fs-7: 3.5rem;
 
-  --clr-neutral-100: hsl(28, 100%, 97%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(28, 100%, 97%);
   --clr-neutral-400: hsl(30, 5%, 45%);
   --clr-neutral-800: hsl(0, 0%, 1%);
 
@@ -76,12 +78,30 @@ svg {
   max-width: 100%;
 }
 
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
 /* BODY/GLOABL */
 
 body {
   font-family: var(--ff-primary);
-  background-color: var(--clr-neutral-100);
-  height: 100svh;
+  background-color: var(--clr-neutral-200);
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  font-weight: var(--fw-bold);
+}
+
+a {
+  text-decoration: none;
 }
 
 /* UTILITY */
@@ -94,4 +114,44 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.wrapper {
+  max-width: 60rem;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
+/* COMPONENTS */
+
+.btn {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  padding-inline: 1.75rem;
+  padding-block: 1rem;
+  border: none;
+  border-radius: 1.75rem;
+}
+
+.btn--dark {
+  color: var(--clr-neutral-200);
+  background-color: var(--clr-neutral-800);
+}
+
+.btn--accent {
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+header img {
+  width: 3rem;
+  height: 3rem;
 }
