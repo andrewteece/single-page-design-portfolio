@@ -250,3 +250,10 @@ header img {
   background-color: var(--clr-accent-800);
   background-image: url('../pattern-motion-graphics.svg');
 }
+
+/* FOOTER */
+
+footer img {
+  width: 3rem;
+  height: 3rem;
+}
