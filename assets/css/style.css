@@ -94,6 +94,7 @@ body {
   min-height: 100svh;
   font-size: var(--fs-1);
   font-weight: var(--fw-regular);
+  overflow-x: hidden;
 }
 
 h1,
@@ -202,7 +203,7 @@ header img {
   gap: 1.5rem;
 }
 
-.service {
+.services .service {
   font-size: var(--fs-3);
   font-weight: var(--fw-bold);
   text-align: left;
@@ -212,33 +213,49 @@ header img {
   background-position: right 1.5rem top 1.5rem;
 
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
   padding-left: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-#service1 {
-  /*max-width: 21rem;*/
-  min-height: 22.75rem;
+.services .service span {
+  align-self: flex-end;
+}
+
+.services #service1 {
+  width: 22.5rem;
+  height: 22.75rem;
   justify-content: flex-start;
   background-color: var(--clr-primary-700);
   background-image: url('../pattern-graphic-design.svg');
+
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 2;
 }
 
-#service2 {
+.services #service2 {
   background-color: var(--clr-primary-500);
   background-image: url('../pattern-ui-ux.svg');
+  width: 10rem;
+  height: 11.25rem;
 }
 
-#service3 {
+.services #service3 {
   background-color: var(--clr-primary-300);
-  background-image: url('../pattern-graphic-design.svg');
+  background-image: url('../pattern-apps.svg');
+  width: 10 rem;
+  height: 11.25rem;
 }
 
 #service4 {
   background-color: var(--clr-accent-600);
   background-image: url('../pattern-illustrations.svg');
+  width: 21.5rem;
+  height: 10px;
 }
 
 #service5 {
