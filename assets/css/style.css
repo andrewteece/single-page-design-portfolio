@@ -313,12 +313,11 @@ header img {
   cursor: pointer;
 }
 
-/* .btn-slide:hover,
+.btn-slide:hover,
 .btn-slide:focus {
-  background-color: var(--clr-neutral-100);
-  color: var(--clr-neutral-800);
-  outline: 1px solid var(--clr-neutral-800);
-} */
+  background-color: var(--clr-primary-700);
+  transition: all 400ms ease-in-out;
+}
 
 /* CONTACT ME */
 
