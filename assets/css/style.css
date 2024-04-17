@@ -296,6 +296,12 @@ header img {
 
 /* MY WORK */
 
+.my-work h2 {
+  font-size: var(--fs-3);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
 .slide-controls {
   display: flex;
   justify-content: center;
