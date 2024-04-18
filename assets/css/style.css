@@ -94,7 +94,6 @@ body {
   min-height: 100svh;
   font-size: var(--fs-1);
   font-weight: var(--fw-regular);
-  overflow-x: hidden;
 }
 
 h1,
@@ -296,10 +295,45 @@ header img {
 
 /* MY WORK */
 
+.my-work {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 30px;
+  color: #fff7f0;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  margin: 100px;
+}
+
 .my-work h2 {
   font-size: var(--fs-3);
   text-align: center;
   padding-bottom: 2rem;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  gap: 15px;
+  margin: 32px 0;
+  transform: translateX(0);
+  transition: all 0.6s ease;
+}
+
+.slider img {
+  width: 270px;
+  height: 180px;
+  border-radius: 6px;
+  background-color: transparent;
 }
 
 .slide-controls {
