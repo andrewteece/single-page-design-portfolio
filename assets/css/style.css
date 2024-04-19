@@ -304,17 +304,11 @@ header img {
   color: #fff7f0;
   font-weight: 700;
   text-align: center;
-  overflow: hidden;
-  margin: 100px;
+  /* overflow: hidden;
+  margin: 100px; */
 }
 
-.my-work h2 {
-  font-size: var(--fs-3);
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.slider {
+.my-work .slider {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -329,7 +323,14 @@ header img {
   transition: all 0.6s ease;
 }
 
-.slider img {
+.my-work h2 {
+  font-size: var(--fs-3);
+  text-align: center;
+  padding-bottom: 1rem;
+  color: var(--clr-neutral-800);
+}
+
+.my-work .slider img {
   width: 270px;
   height: 180px;
   border-radius: 6px;
