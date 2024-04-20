@@ -304,8 +304,8 @@ header img {
   color: #fff7f0;
   font-weight: 700;
   text-align: center;
-  /* overflow: hidden;
-  margin: 100px; */
+  overflow: hidden;
+  /* margin: 100px; */
 }
 
 .my-work .slider {
