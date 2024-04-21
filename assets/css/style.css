@@ -180,6 +180,7 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-block: 3rem;
   padding-inline: 2.5rem;
 }
@@ -193,6 +194,15 @@ header img {
 .intro__text {
   color: var(--clr-neutral-400);
   text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .intro__title {
+    font-size: var(--fs-7);
+  }
+  .intro__text {
+    max-width: 30rem;
+  }
 }
 
 /* SERVICES */
