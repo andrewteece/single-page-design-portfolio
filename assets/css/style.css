@@ -122,7 +122,14 @@ a {
 .wrapper {
   max-width: 60rem;
   padding-inline: 1rem;
-  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 /* COMPONENTS */
@@ -301,6 +308,17 @@ header img {
 .about-me p {
   text-align: center;
   color: var(--clr-neutral-400);
+}
+
+@media (min-width: 48rem) {
+  .about-me {
+    flex-direction: row;
+  }
+
+  .about-me img {
+    min-width: 21rem;
+    height: 21.5rem;
+  }
 }
 
 /* MY WORK */
