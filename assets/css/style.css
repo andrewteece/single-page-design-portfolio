@@ -126,6 +126,10 @@ a {
   align-items: center;
 }
 
+.flow-content > * + * {
+  margin-bottom: 1.5em;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -179,6 +183,12 @@ header {
 header img {
   width: 3rem;
   height: 3rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
 }
 
 /* INTRO */
@@ -313,6 +323,14 @@ header img {
 @media (min-width: 48rem) {
   .about-me {
     flex-direction: row;
+  }
+
+  .about-me h2 {
+    text-align: left;
+  }
+
+  .about-me p {
+    text-align: left;
   }
 
   .about-me img {
