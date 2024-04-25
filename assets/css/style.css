@@ -331,6 +331,7 @@ header img {
 
   .about-me p {
     text-align: left;
+    padding-block: 2rem;
   }
 
   .about-me img {
