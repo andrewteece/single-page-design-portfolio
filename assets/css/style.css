@@ -186,9 +186,6 @@ header img {
 }
 
 @media (min-width: 768px) {
-  header {
-    justify-content: space-between;
-  }
 }
 
 /* INTRO */
